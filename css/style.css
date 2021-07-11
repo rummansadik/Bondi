@@ -1,0 +1,457 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Body
+/*-----------------------------------------------------------------------------------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Navbar
+/*-----------------------------------------------------------------------------------*/
+
+nav{
+    height: 12vh;
+}
+.nav-links{
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 25%;
+}
+.nav-item{
+    overflow: hidden;
+    padding:15px 0px;
+}
+.nav-item a{
+    color: #6F7F8C;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px;
+    position: relative;
+    transition: 0.4s;
+}
+.nav-item a:hover{
+    color: #00C7C0;
+    transition-delay: 0.25s;
+    font-size: 24px;
+    text-decoration: none;
+}
+.nav-line{
+    width: 2px;
+    height: 40px;
+    background: #00C7C0;
+    margin-left: 15px;
+}
+.search-box{
+    display: flex;
+    border: 1px solid teal;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 2.5vh;
+}
+.search-box:hover > .search-txt{
+    width: 110px;
+    padding: 0px 6px;
+}
+.search-box:hover > .search-btn{
+    color: #00C7C0;
+    text-decoration: none;
+}
+.search-btn{
+    color: #00C7C0;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+.nav-item button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    color: yellow;
+    font-size: large;
+}
+.nav-item button:hover{
+    color: paleturquoise;
+    background-color: transparent;
+}
+.fixed-top.scrolled {
+    background: #282A2B;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Header
+/*-----------------------------------------------------------------------------------*/
+
+.header{
+    background-color: #19283F;
+    background-size: cover;
+    height: 75vh;
+    text-align: center;
+}
+.header h1{
+    padding-top: 30vh;
+}
+.header p{
+    color: #82929E;
+    font-size: larger;
+}
+.header button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    color: yellow;
+    font-size: large;
+}
+.header button:hover{
+    color: paleturquoise;
+    background-color: transparent;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Services
+/*-----------------------------------------------------------------------------------*/
+
+.services{
+    padding: 10vh 0vh;
+}
+.services h3{
+    color: #FFC911;
+}
+.services p{
+    color: #6F7F8C;
+}
+.stuff{
+    font-weight: 600;
+    
+}
+.services-border{
+    width: 150px;
+    height: 2px;
+    background: #00C7C0;
+    margin-left: 43%;
+}
+.logo{
+    width: 75px;
+    margin: auto;
+    margin-top: 20px;
+}
+.services .card{
+    padding: 20px;
+    border: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Portfolio
+/*-----------------------------------------------------------------------------------*/
+.portfolio{
+    background-color: #EFF7FA;
+    padding: 10vh 0vh;
+}
+.portfolio-title p{
+    color: #6F7F8C;
+    font-weight: 600;
+}
+.portfolio-border{
+    width: 150px;
+    height: 2px;
+    background: #00C7C0;
+    margin-left: 43%;
+}
+#portfolio {
+    position: relative;
+}
+
+.portfolio-list {
+    margin-bottom: 50px;
+}
+
+.portfolio-list .nav {
+    display: inline-block;
+    margin: 0;
+}
+
+.portfolio-list .nav li {
+    margin: 0 40px 0 0;
+    float: left;
+    font-size: 14px;
+    color: #6F7F8C;
+    line-height: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', helvetica;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+    color: yellow;
+    background-color: crimson;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.portfolio-container {
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.portfolio-thumbnail {
+    margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 260px;
+}
+
+.portfolio-thumbnail img {
+    max-width: 100%;
+}
+
+.portfolio button {
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    color: yellow;
+    font-size: large;
+}
+.portfolio button:hover {
+    color: crimson;
+    background-color: transparent;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  About Us
+/*-----------------------------------------------------------------------------------*/
+
+.about{
+    padding: 10vh 0 0 0;
+}
+.about-title p{
+    color: #6F7F8C;
+    font-weight: 600;
+}
+.about-title .details{
+    padding: 0 25%;
+    font-weight: normal;
+}
+.about-content p{
+    color: #6F7F8C;
+}
+.about-content h3{
+    color: #0f3772;
+}
+.about-content button {
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    color: yellow;
+    font-size: large;
+}
+.about-content button:hover {
+    color: crimson;
+    background-color: transparent;
+}
+.about-logo{
+    width: 600px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Meet The Team
+/*-----------------------------------------------------------------------------------*/
+.team{
+    padding: 10vh 0;
+}
+.team h1{
+    color: yellow;
+}
+.team p{
+    color: #6F7F8C;
+    margin-bottom: 8vh;
+}
+.team .card-text{
+    background-color: #33D1CC;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px;
+    height: 7vh;
+}
+.team .card p{
+    height: 10vh;
+    font-size: 15px;
+    padding:10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Advertise
+/*-----------------------------------------------------------------------------------*/
+
+.advertise{
+    background-color: #19283F;
+    height: 60vh;
+    text-align: center;
+}
+.advertise h1{
+    padding-top: 20vh;
+}
+.advertise p{
+    color: #82929E;
+    font-size: larger;
+}
+.advertise button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    color: yellow;
+    font-size: large;
+}
+.advertise button:hover{
+    color: paleturquoise;
+    background-color: transparent;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Blog
+/*-----------------------------------------------------------------------------------*/
+
+.blog{
+    padding: 10vh 0 ;
+}
+.blog-title p{
+    color: #6F7F8C;
+    font-weight: 600;
+}
+.blog-border{
+    width: 150px;
+    height: 2px;
+    background: #00C7C0;
+    margin-left: 43%;
+    margin-bottom: 8vh;
+}
+.blog .card-text{
+    color: #6F7F8C;
+    margin: 10px;
+    text-align: left;
+}
+.blog .card p{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.blog button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    color: yellow;
+    font-size: large;
+    margin: auto;
+    margin-top: 8vh;
+}
+
+.blog button:hover{
+    color: crimson;
+    background-color: transparent;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Newsletter
+/*-----------------------------------------------------------------------------------*/
+
+.newsletter{
+    background-color: #FFC911;
+    height: 14vh;
+    padding: 4vh;
+}
+.newsletter p{
+    font-size: 28px;
+}
+.newsletter button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    color: yellow;
+    font-size: large;
+    margin: auto;
+    background-color: #19283F;
+}
+.newsletter button:hover{
+    color: yellow;
+    background-color: crimson;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Footer
+/*-----------------------------------------------------------------------------------*/
+
+.footer{
+    background-color: #19283F;
+    padding: 6vh 0 2vh 0;
+}
+.footer li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.footer li a{
+    color: white;
+}
+.footer li a:hover{
+    color:crimson;
+    text-decoration: none;
+}
+.footer button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 230px;
+    color: yellow;
+    font-size: large;
+}
+.footer button:hover{
+    color: paleturquoise;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+@media screen and (min-width: 992px){
+    
+}
+@media screen and (min-width: 768px){
+    
+}
+@media screen and (min-width: 576px){
+    
+}

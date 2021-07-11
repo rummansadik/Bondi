@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="font/css/all.min.css">
+    <link rel="stylesheet" type = "text/css" href="css/style.css">
+    <link rel="stylesheet" type = "text/css" href="css/bootstrap.min.css">
+    <title>Bondi</title>
+</head>
+<body>
+
+<!-- -----------------------------------------------------------------------------------
+                                        Navbar
+----------------------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class = "container">
+            <a href="home.html">
+                <img src = "images/Logo.png">
+            </a>
+            
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav-links">
+                    <li class="nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-line"></div>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="search-box">
+                        <input class="search-txt" type="text" name = "" placeholder="Type to search">
+                        <a class="search-btn" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>  
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-danger">Login</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------------------------------------------------------------------------
+                                            Header
+    ----------------------------------------------------------------------------------- -->
+    
+    <div class = "header">
+        <div class="container">
+            <h1 class="text-white display-3">Taste the Creativity</h1>
+            <p>We make awesome graphic and web design</p>
+            <button class="btn btn-danger mt-4">Get Started</button>
+        </div>
+    </div>
+    
+ <!-- -----------------------------------------------------------------------------------
+                                            Services
+    ----------------------------------------------------------------------------------- -->
+    
+    <div class="services">
+        <div class="container text-center">
+            <img src="images/Composite Path.png">
+            <h1 class="mt-4">We are Good at</h1>
+            <p class = "stuff">SOME OF THESE STUFF UNDER</p>
+            <div class="services-border"></div>
+
+            <div class = "row p-5">
+                <div class="col-lg-4"> 
+                    <div class="card">
+                        <img src="images/portfolio/1.jpg" alt="Graphics Design" class="card-img-top">
+                        <img src="images/graphic.png" class="logo">
+                        <div class="card-body">
+                            <h3>GRAPHIC DESIGN</h3>
+                            <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/portfolio/2.jpg" alt="Graphics Design" class="card-img-top">
+                        <img src="images/web.png" class="logo">
+                        <div class="card-body">
+                            <h3>WEB DESIGN</h3>
+                            <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/portfolio/3.jpg" alt="Graphics Design" class="card-img-top">
+                        <img src="images/app.png" class="logo">
+                        <div class="card-body">
+                            <h3>APP DESIGN</h3>
+                            <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- -----------------------------------------------------------------------------------
+                                            Portfolio
+    ----------------------------------------------------------------------------------- -->
+ 
+    <div id="portfolio" class="text-center portfolio">
+        <div class="container text-center">
+            <div class="portfolio-title">
+                <img src="images/Composite Path.png">
+                <h1 class="mt-4">We Make This</h1>
+                <p>PREPARE TO BE AMAZED</p>
+                <div class="portfolio-border"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <div class="portfolio-list">
+
+                        <ul class="nav list-unstyled" id="portfolio-flters">
+                            <li class="filter filter-active btn " data-filter=".all">all</li>
+                            <li class="filter btn" data-filter=".design">Design</li>
+                            <li class="filter btn" data-filter=".code">Code</li>
+                            <li class="filter btn" data-filter=".photography">photography</li>
+                            <li class="filter btn" data-filter=".apps">Apps</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="portfolio-container">
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all design code">
+                        <a class="popup-img" href="images/portfolio/1.jpg">
+                            <img src="images/portfolio/1.jpg" alt="img">
+                        </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all photography code">
+                        <a class="popup-img" href="images/portfolio/2.jpg">
+                            <img src="images/portfolio/2.jpg"  alt="img">
+                        </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all apps photographyn">
+                        <a class="popup-img" href="images/portfolio/3.jpg">
+                            <img src="images/portfolio/3.jpg" alt="img">
+                        </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all design apps">
+                        <a class="popup-img" href="images/portfolio/4.jpg">
+                            <img src="images/portfolio/4.jpg" alt="img">
+                        </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all design photography">
+                        <a class="popup-img" href="images/portfolio/5.jpg">
+                            <img src="images/portfolio/5.jpg" alt="img">
+                        </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all code apps">
+                        <a class="popup-img" href="images/portfolio/6.jpg">
+                            <img src="images/portfolio/6.jpg" alt="img">
+                        </a>
+                        </div>
+                        
+                    </div>
+                    <button class="btn btn-danger">I Want More...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- -----------------------------------------------------------------------------------
+                                            About Us
+    ----------------------------------------------------------------------------------- -->
+ 
+    <div class="about">
+        <div class="container text-center">
+            <div class="about-title">
+                <img src="images/Composite Path.png">
+                <h1 class="mt-4">Some Stuff About Us</h1>
+                <p>THE GREAT TEAM</p>
+                <div class="portfolio-border mb-4"></div>
+                <p class="details">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            </div>
+
+            <div class = "row p-5 about-content">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">RETINA DESIGN</h3>
+                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. </p>
+                    
+                    <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+                    <button class="btn btn-danger mt-4">ORDER ME ONE</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/Screen.png" class="about-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------------------------------------------------------------------------------
+                                        Meet The Team
+----------------------------------------------------------------------------------- -->
+
+    <div class="team">
+        <div class="container text-center">
+            <h1>Meet the Team</h1>
+            <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/portfolio/1.jpg" class="card-img">
+                        <div class="card-text">Luke Skywalker</div>
+                        <p>“I don't understand how we got by those troops. I thought we were dead.”</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/portfolio/2.jpg"  class="card-img">
+                        <div class="card-text">Obi-Wan Kenobi</div>
+                        <p>“Your clones are very impressive. You must be very proud”</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/portfolio/3.jpg" class="card-img">
+                        <div class="card-text">Princess Leia</div>
+                        <p>“I don't know who you are or where you came from, but from now on you'll do as I tell you, okay?”</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/portfolio/4.jpg" class="card-img">
+                        <div class="card-text">Yoda</div>
+                        <p>“Do not assume anything Obi-Wan. Clear your mind must be if you are to discover the real villains behind this plot.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- -----------------------------------------------------------------------------------
+                                            Advertise
+    ----------------------------------------------------------------------------------- -->
+    
+    <div class = "advertise">
+        <div class="container">
+            <h1 class="text-white">Start Your Project Now</h1>
+            <p>Leave your description and we start the engine. Don't worry, you can cancel anytime</p>
+            <button class="btn btn-danger mt-4">START PROJECT</button>
+        </div>
+    </div>
+
+ <!-- -----------------------------------------------------------------------------------
+                                            Blog
+    ----------------------------------------------------------------------------------- -->
+ 
+    <div class="text-center blog">
+        <div class="container">
+            <div class="blog-title text-center">
+                <img src="images/Composite Path.png">
+                <h1>Read Our Blog</h1>
+                <p>NEW STORIES</p>
+                <div class="blog-border"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/portfolio/1.jpg" class="card-img">
+                        <div class="card-text">January 17, 2017</div>
+                        <p>Some Awesome Blog title Here</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/portfolio/2.jpg"  class="card-img">
+                        <div class="card-text">January 17, 2017</div>
+                        <p>Some Awesome Blog title Here</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/portfolio/3.jpg" class="card-img">
+                        <div class="card-text">January 17, 2017</div>
+                        <p>Some Awesome Blog title Here</p>
+                    </div>
+                </div>
+                <button class="btn btn-danger">MORE STORIES</button>
+            </div>
+        </div>
+    </div>
+
+ <!-- -----------------------------------------------------------------------------------
+                                            Newsletter
+    ----------------------------------------------------------------------------------- -->
+ 
+    <div class = "newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>Subscribe to our Newsletter: </p>
+                </div>
+                <div class="col-lg-4">
+                    <input class="email form-control" type="email" name = "" placeholder="Enter email Address">
+                </div>
+                <div class="col-lg-4">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- -----------------------------------------------------------------------------------
+                                            Footer
+    ----------------------------------------------------------------------------------- -->
+ 
+    <div class ="footer">
+        <div class="container">
+            <div class = "row text-white">
+                <div class = "col-lg-5">
+                    <img src="images/Logo.png">
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    <br>
+                    <br>
+                    <p>Created by Rumman Sadik, Dinajpur, Bangladesh<br> © 2020 - Bondi.Inc</p>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4>About Us</h5>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Contact Us</h5>
+                    <p>Get in touch with us via mail or phone. we are waiting for <br>your call or message.</p>
+                    <button class="btn btn-danger">rummansadik@gmail.com</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+</body>
+</html>
